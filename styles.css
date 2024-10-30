@@ -1,3 +1,9 @@
+/* prevent scrolling */
+html, body {
+  margin: 0;
+  overflow: hidden;
+}
+
 /* light mode (default) */
 body {
   background-color: white;
@@ -19,6 +25,7 @@ body.dark-mode {background-color: black;}
 body.dark-mode h1 {color: white;}
 body.dark-mode h2 {color: white;}
 
+/* align info center */
 .index-info {
   display: flex;
   flex-direction: column;
@@ -26,4 +33,17 @@ body.dark-mode h2 {color: white;}
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
