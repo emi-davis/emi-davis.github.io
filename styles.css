@@ -24,6 +24,10 @@ h2 {
   margin: 0;
 }
 
+p {
+  color: black;
+}
+
 /* align info center */
 .index-info {
   display: flex;
@@ -38,6 +42,7 @@ h2 {
 body.dark-mode {background-color: black;}
 body.dark-mode h1 {color: white;}
 body.dark-mode h2 {color: white;}
+body.dark-mode p {color: white;}
 
 /* dark mode button */
 #theme-toggle {
