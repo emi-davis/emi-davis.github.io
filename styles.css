@@ -1,12 +1,10 @@
 /* light mode (default) */
-body {background-color: white;}
+body {
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 h1 {color: black;}
 
 /* dark mode */
-@media (prefers-color-scheme: dark) {
-  body.dark-mode {background-color: black;}
-  h1.dark-mode {color: white;}
-}
-
-/* smooth transition */
-body {transition: background-color 0.3s ease, color 0.3s ease;}
+body.dark-mode {background-color: black;}
+body.dark-mode h1 {color: white;}
