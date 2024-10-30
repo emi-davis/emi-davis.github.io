@@ -23,10 +23,9 @@ if (savedTheme) {
 }
 
 // add listener button click
-toggleButton.addEventListener("click", ()=> {
+darkModeToggle.addEventListener("click", ()=> {
   // toggle theme
   const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
   setTheme(newTheme);
-  }
-)
+});
