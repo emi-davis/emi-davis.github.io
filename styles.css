@@ -60,6 +60,7 @@ body.dark-mode p {color: white;}
   justify-content: center;
 }
 
+/* divide up container for image and about me */
 .container {
   display: flex;
   height: 100vh;
@@ -72,9 +73,11 @@ body.dark-mode p {color: white;}
   align-items: center;
 }
 
+/* stretch to fit */
 .image-section img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .text-section {
