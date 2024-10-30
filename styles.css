@@ -4,6 +4,9 @@ h1 {color: black;}
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
-  body {background-color: black;}
-  h1 {color: white;}
+  body.dark-mode {background-color: black;}
+  h1.dark-mode {color: white;}
 }
+
+/* smooth transition */
+body {transition: background-color 0.3s ease, color 0.3s ease;}
