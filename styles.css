@@ -1,9 +1,9 @@
 /* light mode (default) */
 body {background-color: white;}
-h1 {color: black}
+h1 {color: black;}
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   body {background-color: black;}
-  h1 {color: white}
+  h1 {color: white;}
 }
